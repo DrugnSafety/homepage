@@ -6,10 +6,14 @@
 <meta name="theme-color" content="#EDE9E1">
 <title>강민규 교수 차트 · 충북대학교 의과대학</title>
 <meta name="description" content="충북대학교 의과대학 내과학교실 강민규 부교수(충북대학교병원 알레르기내과). 약 때문에 다시 아프지 않도록. 내 부작용 기록은 누구의 것입니까.">
+<link rel="canonical" href="https://drugnsafety.github.io/homepage/">
+<link rel="alternate" hreflang="ko" href="https://drugnsafety.github.io/homepage/">
+<link rel="alternate" hreflang="en" href="https://drugnsafety.github.io/homepage/en/">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="강민규 교수 차트">
 <meta property="og:description" content="충북대학교 의과대학 내과학교실 부교수 · 충북대학교병원 알레르기내과. 약물알레르기 정보공유, 환자 중심 약물안전 시스템, 약물역학, 천식 임상연구, 임상 AI.">
-<meta property="og:image" content="assets/og-cover.jpg">
+<meta property="og:image" content="https://drugnsafety.github.io/homepage/assets/og-cover.jpg">
+<meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2210%22%20fill%3D%22%23B9C4BB%22%2F%3E%3Crect%20x%3D%2212%22%20y%3D%2214%22%20width%3D%2240%22%20height%3D%2236%22%20rx%3D%223%22%20fill%3D%22%23FCFBF8%22%2F%3E%3Crect%20x%3D%2218%22%20y%3D%2222%22%20width%3D%2228%22%20height%3D%223%22%20fill%3D%22%231C2422%22%2F%3E%3Crect%20x%3D%2218%22%20y%3D%2230%22%20width%3D%2220%22%20height%3D%223%22%20fill%3D%22%23C8472F%22%2F%3E%3Crect%20x%3D%2218%22%20y%3D%2238%22%20width%3D%2224%22%20height%3D%223%22%20fill%3D%22%23C4BEB2%22%2F%3E%3C%2Fsvg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,6 +63,11 @@ img { display: block; max-width: 100%; }
 .brand-en { font-size: 12px; letter-spacing: .02em; color: var(--ink-3); }
 .topbar-right { display: flex; align-items: center; gap: 12px; }
 .topbar-right a { font-size: 13px; text-decoration: none; }
+.lang { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 6px; overflow: hidden; font-family: var(--mono); letter-spacing: .04em; }
+.lang a { font-size: 12px; padding: 5px 9px; color: var(--ink-3); transition: color .2s, background .2s; }
+.lang a + a { border-left: 1px solid var(--rule-strong); }
+.lang a:hover { color: var(--ink); }
+.lang a[aria-current="true"] { background: var(--ink); color: var(--sheet); }
 .btn-ghost { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 14px; border: 1px solid var(--rule-strong); border-radius: 6px; background: rgba(255,255,255,.5); cursor: pointer; font-size: 13px; font-weight: 500; transition: border-color .2s, transform .15s, background .2s; }
 .btn-ghost:hover { border-color: var(--ink); background: #fff; }
 .btn-ghost:active { transform: scale(.98); }
@@ -565,6 +574,7 @@ details[open] summary .ph { transform: rotate(180deg); }
   <header class="topbar">
     <div class="brand"><span class="brand-ko">강민규</span><span class="brand-en">Min-Gyu Kang, MD PhD</span></div>
     <div class="topbar-right">
+      <nav class="lang" aria-label="Language"><a href="./" hreflang="ko" lang="ko" aria-current="true">KO</a><a href="en/" hreflang="en" lang="en">EN</a></nav>
       <a href="mailto:irreversibly@gmail.com">irreversibly@gmail.com</a>
       <button class="btn-ghost close-chart" type="button" id="closeChart"><svg width="16" height="16" aria-hidden="true" focusable="false" class="ph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"/></svg>차트 덮기</button>
     </div>
