@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A deidentified myadr.care medication-safety review demonstration with explicit clinical review boundaries.">
+  <title>myadr.care | Inside a medication-safety review</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f7fbfd;
+      --muted: #b9cbd4;
+      --bg: #071a24;
+      --panel: #102f3c;
+      --teal: #40c9b4;
+      --warn: #ffd166;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 85% 5%, #123a48 0, transparent 32%), var(--bg);
+      color: var(--ink);
+      font: 16px/1.6 Arial, sans-serif;
+    }
+    main { width: min(1120px, calc(100% - 32px)); margin: auto; padding: 56px 0 72px; }
+    .eyebrow { color: var(--teal); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { max-width: 900px; margin: .2em 0; font-size: clamp(2.2rem, 6vw, 4.7rem); line-height: 1.03; }
+    .lead { max-width: 780px; color: var(--muted); font-size: 1.15rem; }
+    .video-shell {
+      margin: 36px 0;
+      padding: 12px;
+      border: 1px solid #315363;
+      border-radius: 22px;
+      background: #020b10;
+      box-shadow: 0 24px 70px #0008;
+    }
+    video { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 13px; background: #000; }
+    .notice {
+      border-left: 5px solid var(--warn);
+      background: var(--panel);
+      padding: 18px 22px;
+      border-radius: 4px 14px 14px 4px;
+    }
+    .notice strong { color: var(--warn); }
+    section { margin-top: 44px; }
+    h2 { margin-bottom: 10px; font-size: 1.55rem; }
+    ul { padding-left: 1.25rem; }
+    li + li { margin-top: .45rem; }
+    .transcript { max-width: 900px; color: var(--muted); }
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid #315363; color: #91a8b3; font-size: .9rem; }
+    a { color: #79dfcf; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">myadr.care · Deidentified demonstration</p>
+  <h1>Inside a medication-safety review</h1>
+  <p class="lead">A 76-second view of a blank patient-registration interface and the DUR Screening Dataset, followed by the human-review controls that protect patient-facing guidance.</p>
+
+  <div class="video-shell">
+    <video controls playsinline preload="metadata" aria-label="myadr.care medication-safety review demonstration">
+      <source src="../../assets/myadr-workflow-en.mp4" type="video/mp4">
+      Your browser does not support HTML video. <a href="../../assets/myadr-workflow-en.mp4">Open the MP4 directly.</a>
+    </video>
+  </div>
+
+  <div class="notice"><strong>Review boundary.</strong> This film demonstrates the interface layout; it is not a clinical recommendation. Automated appraisal scores are not validated measures of clinical accuracy. A reviewer must verify the product, active ingredient, source record, and patient context.</div>
+
+  <section>
+    <h2>What is captured</h2>
+    <ul>
+      <li>A real blank patient-registration screen. No patient was entered or saved.</li>
+      <li>A real DUR Screening Dataset view with source-referenced sentences and evaluation columns.</li>
+      <li>English diagrams that explain workflow context and are explicitly marked as not captured.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Clinical review gate</h2>
+    <p>The interface includes feedback, memory evaluation, and final medication guide controls. No feedback submission, regeneration, approval, or delivery was performed in this recording. The intended process requires physician and pharmacist review before personalized guidance reaches a patient.</p>
+  </section>
+
+  <section>
+    <h2>Transcript</h2>
+    <div class="transcript">
+      <p>myadr.care brings patient records into a structured medication-safety review. This demonstration uses deidentified interface captures.</p>
+      <p>The broader workflow can normalize FHIR data, organize a medication list, run automated screening, and prepare a draft for clinical review. These upstream steps are workflow context and were not recorded here.</p>
+      <p>The first real screen is a blank patient-registration form. No patient was entered or saved. The second real screen is the DUR Screening Dataset. Candidate findings appear with source-referenced sentences and evaluation columns for reviewer inspection.</p>
+      <p>The scores are automated appraisal signals, not validated measures of clinical accuracy. One captured row may contain an ingredient mismatch. The reviewer must verify the product, active ingredient, source, and patient context before using any suggestion. This is a review-layout demonstration, not a clinical recommendation.</p>
+      <p>The interface includes feedback, memory evaluation, and final medication guide controls. None was submitted, regenerated, approved, or delivered in this recording. Physician and pharmacist review comes before patient use.</p>
+    </div>
+  </section>
+
+  <footer>Digital Drug Safety Research Team · English public demonstration · Published for the World Patient Safety 2026 poster experience</footer>
+</main>
+</body>
+</html>
